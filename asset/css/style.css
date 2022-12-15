@@ -1,0 +1,111 @@
+:root {
+    --bg-color: #1bb295;
+    --bg--hover: #1aba9a;
+    --white-color: #fff;
+    --text-color: #333;
+    --border-color: #ccc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+}
+
+.wrapper {
+    z-index: 1;
+    width: 430px;
+    background-color: var(--white-color);
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 2.7rem;
+    color: var(--text-color);
+    font-weight: 500;
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.user-input {
+    opacity: 0;
+    z-index: -999;
+    cursor: default;
+}
+.container {
+    padding: 16px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.answer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.answer input {
+    height: 57px;
+    width: 57px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    background: none;
+    font-size: 2.6rem;
+    font-weight: 500;
+    color: var(--bg--hover);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.img {
+    height: 200px;
+    width: 100%;
+    border-radius: 5px;
+    background: center/cover no-repeat;
+    /* background-image: url('/Word_Guessing_Game/asset/image/'); */
+}
+
+.content {
+    padding: 20px 0 20px;
+}
+
+.content p {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-top: 10px;
+}
+
+.btn-reset {
+    user-select: none;
+    width: 100%;
+    height: 54px;
+    border: none;
+    outline: none;
+    background-color: var(--bg-color);
+    border-radius: 5px;
+    font-size: 1.8rem;
+    color: var(--white-color);
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.btn-reset:hover {
+    background-color: var(--bg--hover);
+}
